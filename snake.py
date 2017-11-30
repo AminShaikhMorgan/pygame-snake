@@ -193,6 +193,8 @@ def process_events(direction, game_over):
     for event in pygame.event.get():
         # Quit the program when the user presses the x in the corner of the window.
         if event.type == pygame.QUIT:
+            pygame.display.quit()
+            pygame.quit()
             sys.exit()
         # Process events when the user presses a key on the keyboard.
         # https://www.pygame.org/docs/ref/key.html
