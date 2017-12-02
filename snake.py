@@ -260,7 +260,7 @@ start_game()
 '''
 Snake game.
 Authors:
-To be decided
+Rushaad Hayward
 '''
 
 import pygame
