@@ -2,7 +2,7 @@
 '''
 Snake game.
 Authors:
-To be decided
+Rushaad Hayward, Emmanuel Cook
 '''
 
 import pygame
