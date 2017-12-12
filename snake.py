@@ -33,7 +33,7 @@ COLOR_BACKGROUND = (255, 255, 255)  # rgb color for white
 # This is the color of the snake's head. 
 COLOR_SNAKE_HEAD = (255,254,255)      # rgb color for red
 # This is the color of the rest of the snake.
-COLOR_SNAKE = (159, 5, 151           # rgb color for green
+COLOR_SNAKE = (159, 5, 151)           # rgb color for green
 # This is the color for the snake's food.
 COLOR_FOOD = (255, 200, 0)          # rgb color for orange
 # This is the color for the game over text.
