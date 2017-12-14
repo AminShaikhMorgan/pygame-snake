@@ -110,7 +110,7 @@ def get_game_over_text(score):
     This text should contain 'Game Over' as well as the score.
     score - integer representing the current score of the game.
     """
-   return 'Game Over. Score:' + str(score)
+    return 'Game Over. Score:' + str(score)
 def get_snake_speed(snake):
     """Return the number of cells the snake should travel in one second.
     snake - list of 2-tuples representing the positions of each snake segment
