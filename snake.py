@@ -45,7 +45,7 @@ def get_direction(previous_direction, event_key):
     event_key - the event that the user pressed; one of https://www.pygame.org/docs/ref/key.html
     If event_key does not correspond with any of the arrows keys, return previous_direction.
     """
-  if event_key == pygame.K_LEFT:
+    if event_key == pygame.K_LEFT:
         return DIRECTION_LEFT
     elif event_key == pygame.K_UP:
         return DIRECTION_UP
@@ -68,10 +68,11 @@ def snake_ate_food(snake, food):
     food - 2-tuple representing the position in the grid of the food
     This function should return True if the head of the snake is in the same position as food.
     """
-     if snake[0] == food:
+    if snake[0] == food:
         return True
     else:
         return False
+      
     
 
 def snake_ran_out_of_bounds(snake):
@@ -79,9 +80,9 @@ def snake_ran_out_of_bounds(snake):
     snake - list of 2-tuples representing the positions of each snake segment
     Note that the grid is GRID_WIDTH cells wide and GRID_HEIGHT cells high.
     """
-     if snake[0][0] > (GRID_WIDTH-1) or snake[0][0] < 0:
+    if snake[0][0] > (GRID_WIDTH-1) or snake[0][0] < 0:
         return True
-    elif snake[0][1] > (GRID_HEIGHT -1) or snake[0][1] < 0:
+    elif snake[0][1] > (GRID_HEIGHT -1) or snake[0][0] < 0:
         return True
     else:
         return False
@@ -95,7 +96,6 @@ def snake_intersected_body(snake):
         if snake[seg] == snake[0]:
             return True
     return False
-
 def get_score(snake):
     """Returns the current score of the game.
     snake - list of 2-tuples representing the positions of each snake segment
@@ -117,10 +117,11 @@ def get_snake_speed(snake):
     The speed at the beginning of the game should be 5. Once the snake has eaten 10 pieces of food,
     the speed of the game should increase (by how much is up to you).
     """
-   speed = 5
-    if get_score(snake) >= 150 :
+    speed = 5
+    if get_score(snake) >= 150:
         speed += 3
-    return speed
+    return speed    
+   
 def move_snake(snake, direction, food):
     """Moves the snake one space in the direction specified and returns whether food was eaten.
     The snake moves by removing the last segment and added a new head to the beginning of the snake list.
